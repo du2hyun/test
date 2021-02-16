@@ -1,10 +1,8 @@
 package com.example.myapplication;
 
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -51,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     if(loginDTO != null) {
-                        Log.d(TAG, "onClick: id:" + loginDTO.getId());
+                        //Log.d(TAG, "onClick: id:" + loginDTO.getId());
                     } else { //로그인 정보가 맞지 않으면 토스트창 띄우고 id, pw칸 지우고 id칸에 포커스
                         Toast.makeText(MainActivity.this, "아이디나 비밀번호가 틀렸습니다.", Toast.LENGTH_SHORT).show();
                         etID.setText("");
